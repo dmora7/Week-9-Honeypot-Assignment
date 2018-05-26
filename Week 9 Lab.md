@@ -1,10 +1,10 @@
 # Week 9 Lab - Into The Packets
 ## Milestone 0: Networking Toolbox
 ### Networking Config
-Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface?
-What is your primary interface's IP address? Is it different from your public IP? Why or why not?
-What is the MAC address of your primary interface?
-Identify and understand your loopback interface
+Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface? eth1
+What is your primary interface's IP address? Is it different from your public IP? Why or why not? 192.168.33.15
+What is the MAC address of your primary interface? 08:00:27:af:30:9a 
+Identify and understand your loopback interface. 127.0.0.1 The loopack address is a virtual network interface that your computer uses to communicate with itself.
 
 ### Ping
 What is the IP address of codepath.com?
