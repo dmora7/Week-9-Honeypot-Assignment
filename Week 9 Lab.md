@@ -1,15 +1,15 @@
 # Week 9 Lab - Into The Packets
 ## Milestone 0: Networking Toolbox
 ### Networking Config
-Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface? eth1
-What is your primary interface's IP address? Is it different from your public IP? Why or why not? 192.168.33.15
-What is the MAC address of your primary interface? 08:00:27:af:30:9a 
-Identify and understand your loopback interface. 127.0.0.1 The loopack address is a virtual network interface that your computer uses to communicate with itself.
+**1. Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface?** _eth1_
+**2. What is your primary interface's IP address? Is it different from your public IP? Why or why not?** _192.168.33.15_
+**3. What is the MAC address of your primary interface?** _08:00:27:af:30:9a_ 
+**4. Identify and understand your loopback interface.** _127.0.0.1 The loopack address is a virtual network interface that your computer uses to communicate with itself._
 
 ### Ping
-What is the IP address of codepath.com?
-What is the IP address of google.com?
-Why would the IP address of google.com change between runs or from different locations?
+**1. What is the IP address of codepath.com?** _198.58.125.217_
+**2. What is the IP address of google.com?** _216.58.193.206_
+**3. Why would the IP address of google.com change between runs or from different locations?** _Google deals with millions of requests at any given time and to be able to faciliate that service to end users, Google has many data centers located around the world that host the application. Each data center has a unique public IP address that is accessible. Therefore,the IP addresses of each data-center are added to the DNS entry of google.com. Resulting in different IP addresses being associated with google.com._
 
 ### nslookup
 Using the IP for codepath.com from the previous, pass it to nslookup
