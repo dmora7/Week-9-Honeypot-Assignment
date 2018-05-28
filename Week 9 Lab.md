@@ -2,38 +2,54 @@
 ## Milestone 0: Networking Toolbox
 ### Networking Config
 **1. Run ifconfig/ipconfig/ip and determine the name/id of your primary network interface?** _eth1_
+
 **2. What is your primary interface's IP address? Is it different from your public IP? Why or why not?** _192.168.33.15_
+
 **3. What is the MAC address of your primary interface?** _08:00:27:af:30:9a_ 
+
 **4. Identify and understand your loopback interface.** _127.0.0.1 The loopack address is a virtual network interface that your computer uses to communicate with itself._
 
 ### Ping
 **1. What is the IP address of codepath.com?** _198.58.125.217_
+
 **2. What is the IP address of google.com?** _216.58.193.206_
+
 **3. Why would the IP address of google.com change between runs or from different locations?** _Google deals with millions of requests at any given time and to be able to faciliate that service to end users, Google has many data centers located around the world that host the application. Each data center has a unique public IP address that is accessible. Therefore,the IP addresses of each data-center are added to the DNS entry of google.com. Resulting in different IP addresses being associated with google.com._
 
 ### nslookup
-Using the IP for codepath.com from the previous, pass it to nslookup
-Does the domain returned from nslookup match? If not, why not?
+**1. Using the IP for codepath.com from the previous, pass it to nslookup**
+<img width="299" alt="nslookup" src="https://user-images.githubusercontent.com/37861847/40581689-b2f2673a-6113-11e8-964e-87d4673b6213.PNG">
+
+**2. Does the domain returned from nslookup match? If not, why not?** _Yes, it matches._
 
 ### traceroute
-Compare the traceroutes for codepath.com and google.com
-How many of the hops are the same? What accounts for this?
-Which has more hops? What accounts for the difference?
+**1. Compare the traceroutes for `codepath.com` and `google.com`**
+
+**2. How many of the hops are the same? What accounts for this?**
+
+**3. Which has more hops? What accounts for the difference?**
 
 ### Telnet
-What's one thing that makes telnet insecure?
-Can you telnet to codepath.com? What port is open and why?
+**1. What's one thing that makes telnet insecure?** _Telnet sends packet information in clear text that is able to be sniffed by a man in the middle attack that will expose sensitive information._
+
+**2. Can you telnet to codepath.com? What port is open and why?** _Yes, you can telnet to codepath.com on port 22 which is listening for incoming ssh connections. cu
 
 ### cURL and wget
-Identify some differences between the two
-Which would you be more likely to use for interacting with a RESTful API from the command line?
-Which support recursive downloading?
-Which are you more likely to find pre-installed on a Linux OS?
-What is the syntax for each for downloading a file to the current directory?
+**1. Identify some differences between the two** _wget is more simple and straightforward to use and doesn't require a library to run. It's meant for quick downloads and not much more. cURL on the other hand is powered by a library, libcurl, and it can do a lot more than download content from the internet. cURL supports a wide variety of protocols in comparison to wget._
+
+**2. Which would you be more likely to use for interacting with a RESTful API from the command line?** _cURL_
+
+**3. Which support recursive downloading?** _wget_
+
+**4. Which are you more likely to find pre-installed on a Linux OS?** _wget_
+
+**5. What is the syntax for each for downloading a file to the current directory?**
 
 ### ssh and scp
-Why is key authentication preferred to passwords?
-What is the syntax for copying a file from a local folder to a remote one?
+**1. Why is key authentication preferred to passwords?** _Key authentication is more secured than using passwords which can be easily guessed. In addition, passwords have the concern of having botnets guessed usernames and passwords resulting in the system's logs getting clogged. Key authentication however has more possible combinations making it harder to guess and requires a copy of a legitimate private key that corresponds to a public key stored on the server. Therefore, key authentication mitigates the possibilty of guessing usernames and passwords._
+
+**2. What is the syntax for copying a file from a local folder to a remote one?**
+_scp `filename` user@xx.xx.xx.xx:/destination/path
 
 ## Milestone 1: Security-Flavored Net Tools
 Run nmap against your localhost IP to see all open ports
