@@ -18,12 +18,13 @@
 
 ### nslookup
 **1. Using the IP for codepath.com from the previous, pass it to nslookup**
+
 <img width="299" alt="nslookup" src="https://user-images.githubusercontent.com/37861847/40581689-b2f2673a-6113-11e8-964e-87d4673b6213.PNG">
 
 **2. Does the domain returned from nslookup match? If not, why not?** _Yes, it matches._
 
 ### traceroute
-**1. Compare the traceroutes for `codepath.com` and `google.com`**
+**1. Compare the traceroutes for `codepath.com` and `google.com`.**
 
 **2. How many of the hops are the same? What accounts for this?**
 
@@ -32,7 +33,7 @@
 ### Telnet
 **1. What's one thing that makes telnet insecure?** _Telnet sends packet information in clear text that is able to be sniffed by a man in the middle attack that will expose sensitive information._
 
-**2. Can you telnet to codepath.com? What port is open and why?** _Yes, you can telnet to codepath.com on port 22 which is listening for incoming ssh connections. cu
+**2. Can you telnet to codepath.com? What port is open and why?** _Yes, you can telnet to codepath.com on port 22 which is listening for incoming ssh connections._
 
 ### cURL and wget
 **1. Identify some differences between the two** _wget is more simple and straightforward to use and doesn't require a library to run. It's meant for quick downloads and not much more. cURL on the other hand is powered by a library, libcurl, and it can do a lot more than download content from the internet. cURL supports a wide variety of protocols in comparison to wget._
@@ -52,9 +53,11 @@
 _scp `filename` user@xx.xx.xx.xx:/destination/path
 
 ## Milestone 1: Security-Flavored Net Tools
-Run nmap against your localhost IP to see all open ports
-See how many of the ports you can match to services
-Hint: try shutting down Docker or Virtualbox and re-running nmap
+**1. Run nmap against your localhost IP to see all open ports.**
+
+**2. See how many of the ports you can match to services.**
+`Hint: try shutting down Docker or Virtualbox and re-running nmap`
+
 
 ## Milestone 2: Grabbing Packets with tcpdump
 **Challenge 1:** Determine the IP address for `codepath.com` and use `tcpdump` to display packets with that IP as the destination. Then open http://www.codepath.com in the browser and check the output. Notice the output displays the HTTP requests in addition to the packets.
