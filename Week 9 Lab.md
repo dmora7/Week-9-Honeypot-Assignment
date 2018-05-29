@@ -50,10 +50,13 @@
 **1. Why is key authentication preferred to passwords?** _Key authentication is more secured than using passwords which can be easily guessed. In addition, passwords have the concern of having botnets guessed usernames and passwords resulting in the system's logs getting clogged. Key authentication however has more possible combinations making it harder to guess and requires a copy of a legitimate private key that corresponds to a public key stored on the server. Therefore, key authentication mitigates the possibilty of guessing usernames and passwords._
 
 **2. What is the syntax for copying a file from a local folder to a remote one?**
-_scp `filename` user@xx.xx.xx.xx:/destination/path
+
+_scp `filename` user@xx.xx.xx.xx:/destination/path_
 
 ## Milestone 1: Security-Flavored Net Tools
 **1. Run nmap against your localhost IP to see all open ports.**
+<img width="364" alt="nmap" src="https://user-images.githubusercontent.com/37861847/40600060-d112d64a-6204-11e8-9907-cb165026451b.PNG">
+
 
 **2. See how many of the ports you can match to services.**
 `Hint: try shutting down Docker or Virtualbox and re-running nmap`
