@@ -26,9 +26,11 @@
 ### traceroute
 **1. Compare the traceroutes for `codepath.com` and `google.com`.**
 
-**2. How many of the hops are the same? What accounts for this?**
+<img width="366" alt="traceroute" src="https://user-images.githubusercontent.com/37861847/40896246-bd0098cc-6768-11e8-84c3-593c9198c09f.PNG">
 
-**3. Which has more hops? What accounts for the difference?**
+**2. How many of the hops are the same? What accounts for this?**
+_Both hops are the same because in order to reach the destination whether it be codepath.com or google.com, the hops in between are both the same when running traceroute from the same location. Of course, they may differ in other situations as discussed earlier with google.com having many servers.
+
 
 ### Telnet
 **1. What's one thing that makes telnet insecure?** _Telnet sends packet information in clear text that is able to be sniffed by a man in the middle attack that will expose sensitive information._
@@ -60,7 +62,7 @@ _scp `filename` user@xx.xx.xx.xx:/destination/path_
 
 **2. See how many of the ports you can match to services.**
 `Hint: try shutting down Docker or Virtualbox and re-running nmap`
-
+After shutting down Vagrant, the only port open remained the port displayed above. 
 
 ## Milestone 2: Grabbing Packets with tcpdump
 **Challenge 1:** Determine the IP address for `codepath.com` and use `tcpdump` to display packets with that IP as the destination. Then open http://www.codepath.com in the browser and check the output. Notice the output displays the HTTP requests in addition to the packets.
