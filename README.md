@@ -1,6 +1,12 @@
 # Week-9-Honeypot-Assignment
 > ## Overview & Setup
-
+In this lab exercise, I used Google Cloud Provider to provision my VMs (Honeypot and MHN Admin). 
+1. The first step required the installation of GCP SDK on my local machine to allow the use of `gcloud` from the command line.  
+2. Once that was finished installing, I created the MHN Admin VM using `gcloud` and established a SSH connection to verify connectivity. 
+3. Next, I was suppose to install the MHN Application onto the MHN Admin VM but I was unsuccessful. It kept giving me an error when running the `sudo ./install.sh` command. It kepy prompting me to enter my github credentials but no matter what I entered, it kept saying the Github directory could not be found. 
+4. I was able to move on however and created the Honeypot VM on my cloud provider and established a connection to that VM as well. 
+5. Next, the Honeypot VM needed to get the Honeypot Application installed but since I was unable to install the Admin console application, I was unable to access the MHN admin console where the script gets deployed onto the Honeypot VM. 
+6. I was still able to run a `nmap` scan on the Honeypot VM but without the Honeypot application, there were no vulnerable ports opened that would attract potential attackers. 
 
 > ## Demonstration
 
