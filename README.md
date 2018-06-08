@@ -9,8 +9,20 @@ In this lab exercise, I used Google Cloud Provider to provision my VMs (Honeypot
 6. I was still able to run a `nmap` scan on the Honeypot VM but without the Honeypot application, there were no vulnerable ports opened that would attract potential attackers. 
 
 > ## Demonstration
+**Milestone 0: To the Cloud!**
+<img width="892" alt="30" src="https://user-images.githubusercontent.com/37861847/41143515-6d1a15ce-6aae-11e8-836d-ad97ca369d38.PNG">
 
+**Milestone 1: Create MHN Admin VM**
+<img width="865" alt="31" src="https://user-images.githubusercontent.com/37861847/41143527-74d6b24a-6aae-11e8-84b2-0d977a72de08.PNG">
 
+**Milestone 2: Install the MHN Admin Application**
+<img width="895" alt="32" src="https://user-images.githubusercontent.com/37861847/41143538-7ba37d60-6aae-11e8-8fa3-2e9bb51c2d91.PNG">
+
+**Milestone 3: Create a MHN Honeypot VM**
+<img width="863" alt="33" src="https://user-images.githubusercontent.com/37861847/41143545-81c57fae-6aae-11e8-812f-3f123cbd225b.PNG">
+
+**Milestone 5: Attack!**
+<img width="849" alt="34" src="https://user-images.githubusercontent.com/37861847/41143554-8822bdee-6aae-11e8-87c1-2cce4a0799b0.PNG">
 
 > ## Review 
 ### Which Honeypot(s) did you deployed?
