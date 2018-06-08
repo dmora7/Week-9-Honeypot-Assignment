@@ -1,5 +1,5 @@
 # Week-9-Honeypot-Assignment
-> ## Overview & Setup
+> ## **Overview & Setup**
 In this lab exercise, I used Google Cloud Provider to provision my VMs (Honeypot and MHN Admin). 
 1. The first step required the installation of GCP SDK on my local machine to allow the use of `gcloud` from the command line.  
 2. Once that was finished installing, I created the MHN Admin VM using `gcloud` and established a SSH connection to verify connectivity. 
@@ -8,7 +8,7 @@ In this lab exercise, I used Google Cloud Provider to provision my VMs (Honeypot
 5. Next, the Honeypot VM needed to get the Honeypot Application installed but since I was unable to install the Admin console application, I was unable to access the MHN admin console where the script gets deployed onto the Honeypot VM. 
 6. I was still able to run a `nmap` scan on the Honeypot VM but without the Honeypot application, there were no vulnerable ports opened that would attract potential attackers. 
 
-> ## Demonstration
+> ## **Demonstration**
 **Milestone 0: To the Cloud!**
 <img width="892" alt="30" src="https://user-images.githubusercontent.com/37861847/41143515-6d1a15ce-6aae-11e8-836d-ad97ca369d38.PNG">
 
@@ -24,7 +24,7 @@ In this lab exercise, I used Google Cloud Provider to provision my VMs (Honeypot
 **Milestone 5: Attack!**
 <img width="849" alt="34" src="https://user-images.githubusercontent.com/37861847/41143554-8822bdee-6aae-11e8-87c1-2cce4a0799b0.PNG">
 
-> ## Review 
+> ## **Review** 
 ### Which Honeypot(s) did you deployed?
 
 <img width="613" alt="googlemachines" src="https://user-images.githubusercontent.com/37861847/40894819-f5e99060-6760-11e8-9277-61f5392184e1.PNG">
